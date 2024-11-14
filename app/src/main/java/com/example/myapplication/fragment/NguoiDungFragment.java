@@ -10,6 +10,9 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.myapplication.R;
+import com.example.myapplication.adapter.NguoiDungAdapter;
+import com.example.myapplication.models.NguoiDung;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -18,9 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-import tampdph33277.fpoly.vergencyshop_quanly.ADAPTER.NguoiDungAdapter;
-import tampdph33277.fpoly.vergencyshop_quanly.DTO.NguoiDung;
-import tampdph33277.fpoly.vergencyshop_quanly.R;
+
 
 public class NguoiDungFragment extends Fragment {
 

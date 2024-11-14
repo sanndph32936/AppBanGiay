@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.androidApplication)
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -8,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.myapplication"
-        minSdk 22
+        minSdk 23
         targetSdk 34
         versionCode 1
         versionName "1.0"
@@ -32,43 +33,49 @@ dependencies {
 
     implementation libs.appcompat.v170
     implementation libs.material.v150
-    implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
-    implementation 'com.google.firebase:firebase-firestore:24.9.1'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    implementation platform('com.google.firebase:firebase-bom:32.5.0')
+    implementation libs.constraintlayout.v220
+    implementation libs.firebase.firestore
+    testImplementation libs.junit
+    androidTestImplementation libs.junit.v121
+    androidTestImplementation libs.espresso.core.v361
+    implementation platform(libs.firebase.bom.v3250)
+    //noinspection UseTomlInstead
     implementation 'com.google.firebase:firebase-analytics'
 
-    implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
+    implementation(platform(libs.com.google.firebase.firebase.bom))
+    //noinspection UseTomlInstead
     implementation("com.google.firebase:firebase-database")
 
 
     // Import the BoM for the Firebase platform
-    implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
+    implementation platform(libs.com.google.firebase.firebase.bom)
 
     // Add the dependency for the Firebase Authentication library
     // When using the BoM, you don't specify versions in Firebase library dependencies
+    //noinspection UseTomlInstead
     implementation("com.google.firebase:firebase-auth")
 
     // Import the BoM for the Firebase platform
-    implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
+    implementation(platform(libs.com.google.firebase.firebase.bom))
 
     //
+    //noinspection UseTomlInstead
     implementation("com.google.firebase:firebase-storage")
 
     // FirebaseUI for Firebase Realtime Database
-    implementation 'com.firebaseui:firebase-ui-database:8.0.2'
+    implementation libs.firebase.ui.database
 
     //Ảnh tròn
-    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation libs.circleimageview
     //Load ảnh Glide
-    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    implementation libs.glide
 
-    implementation platform('com.google.firebase:firebase-bom:32.6.0')
+    implementation platform(libs.com.google.firebase.firebase.bom.v3260)
+    //noinspection UseTomlInstead
     implementation 'com.google.firebase:firebase-analytics'
 
     // Declare the dependency for the Cloud Firestore library
     // When using the BoM, you don't specify versions in Firebase library dependencies
+    //noinspection UseTomlInstead
     implementation("com.google.firebase:firebase-firestore")
 }

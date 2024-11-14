@@ -16,6 +16,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.myapplication.R;
+import com.example.myapplication.models.HoaDon;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -31,8 +33,7 @@ import java.util.Currency;
 import java.util.GregorianCalendar;
 import java.util.Locale;
 
-import tampdph33277.fpoly.vergencyshop_quanly.DTO.HoaDon;
-import tampdph33277.fpoly.vergencyshop_quanly.R;
+
 
 public class DoanhThuFragment extends Fragment {
     Button btn_doanhthu,btn_ngaybd,btn_ngaykt;
@@ -130,9 +131,15 @@ public class DoanhThuFragment extends Fragment {
                                       }
                                   }
                                     Locale locale = new Locale("vi", "VN");
-                                    NumberFormat currencyFormat = NumberFormat.getCurrencyInstance(locale);
+                                    NumberFormat currencyFormat = null;
+                                    if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+                                        currencyFormat = NumberFormat.getCurrencyInstance(locale);
+                                    }
                                     Currency currency = Currency.getInstance(locale);
-                                    String formattedDoanhthu = currencyFormat.format(Double.parseDouble(String.valueOf(tongTien)));
+                                    String formattedDoanhthu = null;
+                                    if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+                                        formattedDoanhthu = currencyFormat.format(Double.parseDouble(String.valueOf(tongTien)));
+                                    }
                                     tv_doanhthu.setText(formattedDoanhthu);
 
 

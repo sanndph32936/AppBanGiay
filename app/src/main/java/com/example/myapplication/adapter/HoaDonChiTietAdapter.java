@@ -11,6 +11,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.myapplication.ChiTietHoaDonActivity;
+import com.example.myapplication.R;
+import com.example.myapplication.models.HoaDonChiTiet;
+import com.example.myapplication.models.SanPham;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -19,9 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-import tampdph33277.fpoly.vergencyshop_quanly.DTO.HoaDonChiTiet;
-import tampdph33277.fpoly.vergencyshop_quanly.DTO.SanPham;
-import tampdph33277.fpoly.vergencyshop_quanly.R;
+
 
 public class HoaDonChiTietAdapter extends RecyclerView.Adapter<HoaDonChiTietAdapter.HolderHoaDonChiTietAdapter> {
 
@@ -31,6 +33,9 @@ public class HoaDonChiTietAdapter extends RecyclerView.Adapter<HoaDonChiTietAdap
     public HoaDonChiTietAdapter(ArrayList<HoaDonChiTiet> list, Context context) {
         this.list = list;
         this.context = context;
+    }
+
+    public HoaDonChiTietAdapter(ArrayList<HoaDonChiTiet> list, ChiTietHoaDonActivity context) {
     }
 
     @NonNull

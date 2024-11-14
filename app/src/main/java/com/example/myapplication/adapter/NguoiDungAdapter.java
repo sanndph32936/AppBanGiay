@@ -11,11 +11,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.myapplication.R;
+import com.example.myapplication.models.NguoiDung;
 
 import java.util.ArrayList;
 
-import tampdph33277.fpoly.vergencyshop_quanly.DTO.NguoiDung;
-import tampdph33277.fpoly.vergencyshop_quanly.R;
 
 public class NguoiDungAdapter extends RecyclerView.Adapter<NguoiDungAdapter.HolderNguoiDungAdapter> {
     ArrayList<NguoiDung> list ;

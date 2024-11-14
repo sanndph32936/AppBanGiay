@@ -1,7 +1,6 @@
-package tampdph33277.fpoly.vergencyshop_quanly.DTO;
+package com.example.myapplication.models;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 
 public class HoaDon implements Serializable {
     String idHD, idND, thanhTien, ngayMua, phuongThuc, trangThai;

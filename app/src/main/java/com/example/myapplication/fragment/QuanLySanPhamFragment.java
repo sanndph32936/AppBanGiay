@@ -20,6 +20,9 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.myapplication.R;
+import com.example.myapplication.adapter.QuanLySanPhamAdapter;
+import com.example.myapplication.models.SanPham;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -32,16 +35,13 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import tampdph33277.fpoly.vergencyshop_quanly.ADAPTER.QuanLySanPhamAdapter;
-import tampdph33277.fpoly.vergencyshop_quanly.DTO.SanPham;
-import tampdph33277.fpoly.vergencyshop_quanly.R;
 
 
 public class QuanLySanPhamFragment extends Fragment {
     View view;
     QuanLySanPhamAdapter quanLySanPhamAdapter;
     SearchView sv_tenSP;
-ImageView addSP_ImageView;
+    ImageView addSP_ImageView;
 
     private RecyclerView rcSanPham;
     ArrayList<SanPham> list = new ArrayList<>();

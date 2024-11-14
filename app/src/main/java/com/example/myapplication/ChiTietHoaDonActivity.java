@@ -1,4 +1,4 @@
-package tampdph33277.fpoly.vergencyshop_quanly;
+package com.example.myapplication;
 
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +12,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-
+import com.example.myapplication.adapter.HoaDonChiTietAdapter;
+import com.example.myapplication.models.HoaDon;
+import com.example.myapplication.models.HoaDonChiTiet;
+import com.example.myapplication.models.NguoiDung;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -25,10 +28,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import tampdph33277.fpoly.vergencyshop_quanly.ADAPTER.HoaDonChiTietAdapter;
-import tampdph33277.fpoly.vergencyshop_quanly.DTO.HoaDon;
-import tampdph33277.fpoly.vergencyshop_quanly.DTO.HoaDonChiTiet;
-import tampdph33277.fpoly.vergencyshop_quanly.DTO.NguoiDung;
+
 
 public class ChiTietHoaDonActivity extends AppCompatActivity {
     TextView tvIdHoaDonChiTiet ,tvNgayTaoHoaDonChiTiet,tvKhachHangHoaDonChiTiet,tvSoDienThoaiHoaDonChiTiet,tvDiaChiHoaDonChiTiet;

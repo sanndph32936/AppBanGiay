@@ -19,6 +19,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.myapplication.R;
+import com.example.myapplication.models.SanPham;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
@@ -29,8 +31,6 @@ import java.util.ArrayList;
 import java.util.Currency;
 import java.util.Locale;
 
-import tampdph33277.fpoly.vergencyshop_quanly.DTO.SanPham;
-import tampdph33277.fpoly.vergencyshop_quanly.R;
 
 public class QuanLySanPhamAdapter extends  RecyclerView.Adapter<QuanLySanPhamAdapter.HolderQuanLySanPham> {
     private final Context context;

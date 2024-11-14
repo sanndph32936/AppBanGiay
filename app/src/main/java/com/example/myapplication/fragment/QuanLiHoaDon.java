@@ -12,6 +12,9 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.myapplication.R;
+import com.example.myapplication.adapter.HoaDonAdapter;
+import com.example.myapplication.models.HoaDon;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -23,9 +26,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-import tampdph33277.fpoly.vergencyshop_quanly.ADAPTER.HoaDonAdapter;
-import tampdph33277.fpoly.vergencyshop_quanly.DTO.HoaDon;
-import tampdph33277.fpoly.vergencyshop_quanly.R;
+
 
 public class QuanLiHoaDon extends Fragment {
 

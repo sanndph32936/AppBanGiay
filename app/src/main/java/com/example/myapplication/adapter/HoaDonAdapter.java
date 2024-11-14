@@ -12,6 +12,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.myapplication.ChiTietHoaDonActivity;
+import com.example.myapplication.R;
+import com.example.myapplication.models.HoaDon;
+import com.example.myapplication.models.NguoiDung;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -20,10 +24,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-import tampdph33277.fpoly.vergencyshop_quanly.ChiTietHoaDonActivity;
-import tampdph33277.fpoly.vergencyshop_quanly.DTO.HoaDon;
-import tampdph33277.fpoly.vergencyshop_quanly.DTO.NguoiDung;
-import tampdph33277.fpoly.vergencyshop_quanly.R;
+
 
 public class HoaDonAdapter extends RecyclerView.Adapter<HoaDonAdapter.HolderHoaDonAdapter>{
 
