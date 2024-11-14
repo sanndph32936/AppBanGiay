@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bt_quanly"
+        android:title="Sản phẩm"
+        android:icon="@drawable/cart"/>
+    <item
+        android:id="@+id/bt_doanhthu"
+        android:title="Doanh thu"
+        android:icon="@drawable/increase"/>
+    <item
+        android:id="@+id/bt_donhang"
+        android:title="Đơn hàng"
+        android:icon="@drawable/ic_danhmuc"/>
+
+    <item
+        android:id="@+id/bt_nguoidung"
+        android:title="Người dùng"
+        android:icon="@drawable/user"/>
+</menu>
