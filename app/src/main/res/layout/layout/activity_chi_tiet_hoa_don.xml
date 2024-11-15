@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChiTietHoaDonActivity">
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+     >
+        <ImageButton
+            android:id="@+id/img_backTo_hdct"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_arrow_back_24"
+             />
+
+
+    </Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hóa đơn bán hàng"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tvIdHoaDonChiTiet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số hóa đơn: "
+            android:textSize="18sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tvNgayTaoHoaDonChiTiet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày tạo: "
+            android:textSize="18sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tvKhachHangHoaDonChiTiet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Khách hàng: "
+            android:textSize="18sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tvSoDienThoaiHoaDonChiTiet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại: "
+            android:textSize="18sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tvDiaChiHoaDonChiTiet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ: "
+            android:textSize="18sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcHoaDonChiTiet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:id="@+id/tvPhiVanChuyenHoaDonChiTiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Phí vận chuyển" />
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:id="@+id/tvTongTienHoaDonChiTiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Tổng tiền" />
+
+    <Button
+        android:id="@+id/btnHuyHoaDon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/dangnhap"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Hủy đơn hàng" />
+
+</LinearLayout>
