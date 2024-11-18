@@ -1,14 +1,13 @@
 package com.example.myapplication;
 
+import android.os.Bundle;
+import android.view.MenuItem;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-
-import android.os.Bundle;
-import android.view.MenuItem;
-
 
 import com.example.myapplication.fragment.DoanhThuFragment;
 import com.example.myapplication.fragment.NguoiDungFragment;
