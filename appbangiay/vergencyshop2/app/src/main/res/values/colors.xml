@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <color name="backgroundwelcome">#FFD5D6D6</color>
+    <color name="dangnhap">#69bff0</color>
+    <color name="edt">#dde8f5</color>
+    <color name="cancel">#dfe8bd</color>
+    <color name="login">#aac389</color>
+    <color name="btnMua">#ed6969</color>
+    <color name="gia">#ff0000</color>
+
+
+
+</resources>

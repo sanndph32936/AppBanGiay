@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="10sp"
+    android:layout_margin="10sp"
+    android:background="#fff"
+    android:id="@+id/layoutItemSanPhamTrangChu">
+
+    <ImageView
+
+        android:id="@+id/imgSanPhamTrangChu"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/shirt"
+        />
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/tvTenItemSanPhamTrangChu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FIRE T-SHIRT/RED"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+
+        android:layout_gravity="bottom"
+
+        android:id="@+id/tvGiaItemSanPhamTrangChu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="49,000 VNĐ"
+        android:textStyle="bold"
+        android:textColor="@color/gia"/>
+</LinearLayout>

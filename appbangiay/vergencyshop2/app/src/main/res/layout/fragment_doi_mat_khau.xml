@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DangKy"
+    android:background="#70cbff"
+    android:gravity="center"
+    >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgNguoiDungDoiMK"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/ic_nguoidung"
+            android:layout_gravity="center"
+            />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="password_toggle">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/edt_oldpassDMK"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text"
+            android:layout_marginHorizontal="30dp"
+            android:hint="Mật khẩu cũ"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="password_toggle">
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/edt_newpassDMK"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="Mật khẩu mới"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:endIconMode="password_toggle">
+    <com.google.android.material.textfield.TextInputEditText
+        android:singleLine="true"
+        android:id="@+id/edt_checknewpassDMK"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_text"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:hint="Nhập lại mật khẩu"
+        android:paddingLeft="20dp"
+        android:inputType="textPassword"
+
+        />
+</com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/btnCancelDK"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:backgroundTint="@color/cancel"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/btnsaveDMK"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Lưu"
+            android:backgroundTint="@color/login"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
