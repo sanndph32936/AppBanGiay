@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:padding="40dp">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="CÔNG TY TNHH VERGENCY"
+           android:textStyle="bold"
+           android:textSize="25dp" />
+
+       <TextView
+           android:textSize="17dp"
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="     Ngoài thị trường họ chỉ quan tâm đến doanh thu, lợi nhuận. Còn chúng tôi thì tìm đủ mọi cách, làm bất cứ điều gì để khách hàng luôn cảm thấy hài lòng và hạnh phúc. Chúng tôi chưa dám nghĩ mình là số một, nhưng trong tương lai chúng tôi tự tin khẳng định sẽ mãi nỗ lực nâng cao, phát triển nhằm mục đích vươn lên đỉnh điểm về chất lượng dịch vụ và sản phẩm trong từng ngày, từng giờ, từng phút, từng giây, để đem lại cho khách hàng những item tinh tuý nhất, kèm theo đó là một mức giá phù hợp với túi tiền của tất cả mọi người."/>
+
+       <TextView
+           android:textSize="17dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="     Chào mừng đến với Vergency! Hãy để chúng tôi có cơ hội được phục vụ bạn một cách chân thành và tận tâm hết sức có thể."/>
+
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="40dp"
+           android:text="THÔNG TIN LIÊN HỆ"
+           android:textStyle="bold"
+           android:textSize="25dp" />
+
+       <TextView
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Phone: 0383 065 746. "
+           android:textSize="17dp"/>
+       <TextView
+           android:layout_marginTop="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Email: vergency@gmail.com "
+           android:textSize="17dp"/>
+
+   </LinearLayout>
+
+</ScrollView>
